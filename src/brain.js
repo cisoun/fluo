@@ -22,6 +22,12 @@ const RX_ARG = new RegExp(/\{\{([a-zA-Z]+)\}\}/g);
 
 class Brain {
 	constructor (model) {
+		if (typeof model != 'object') {
+			console.error('[fluo] bot model is invalid');
+			this.running = 0;
+			return;
+		}
+
 		this.model = model;
 
 		this.flow    = 'MAIN'; // Current flow.
@@ -96,6 +102,9 @@ class Brain {
 	}
 
 	async run () {
+		if (!this.running) {
+			return;
+		}
 		let next = 1;
 		while (next) {
 			const cmd = this.model.flows[this.flow][this.step];
