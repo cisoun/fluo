@@ -5,7 +5,6 @@ import {Brain} from './brain.js';
 class ChatBox extends HTMLElement {
 	constructor ({
 		botName    = 'Fluo',
-		container  = document.body,
 		model,
 		title      = 'Fluo',
 		userName   = 'You',
@@ -13,7 +12,6 @@ class ChatBox extends HTMLElement {
 		super();
 
 		this.botName   = botName;
-		this.container = container;
 		this.model     = model;
 		this.title     = title;
 		this.userName  = userName;
