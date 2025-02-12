@@ -2,8 +2,10 @@
  <img src="doc/preview.png" width="500"/>
 </p>
 
-
 # Fluo
+
+![GitHub package.json version](https://img.shields.io/github/package-json/v/cisoun/fluo)
+![GitHub License](https://img.shields.io/github/license/cisoun/fluo)
 
 Client side chat bot that you can embed in your page. Useful as simple assistant.
 
