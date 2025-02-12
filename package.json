@@ -1,0 +1,19 @@
+{
+  "name": "fluo",
+  "version": "1.0.0",
+  "description": "Small client side chat bot.",
+  "main": "main.js",
+  "scripts": {
+  	"dev": "node_modules/.bin/esbuild src/main.js --bundle --loader:.html=text --loader:.css=text --watch --outfile=build/fluo.js",
+  	"prod": "node_modules/.bin/esbuild src/main.js --bundle --loader:.html=text --loader:.css=text --minify --outfile=build/fluo.js"
+  },
+  "keywords": [
+    "chat",
+    "bot"
+  ],
+  "author": "Cyriaque 'cisoun' Skrapits",
+  "license": "WTFPL",
+  "devDependencies": {
+    "esbuild": "0.24.2"
+  }
+}
